@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Facebook</title>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-around;
+        background-color: lightseagreen;
+        padding: 1rem;
+      }
+
+      /* every even a tag will have these styles */
+      nav > a:nth-child(even) {
+        color: black;
+      }
+
+      /* if you hover over it, it'll apply these styles */
+      nav > a:hover {
+        color: purple;
+      }
+
+      nav > a {
+        color: white;
+
+        /* wont be underlined anymore */
+        text-decoration: none;
+      }
+
+      /* media query: the styles your webpage will take in a different viewport
+        what a viewport?
+
+        how small your browser is
+
+        phone
+        tablet
+        computer
+      */
+
+      /* if the view width is less than 1250px, it'll apply these styles */
+      /* @media (max-width: 1250px) {
+        nav {
+          display: flex;
+          flex-direction: column;
+        }
+
+        nav > a {
+          font-size: 2rem;
+        }
+      } */
+    </style>
+  </head>
+  <body>
+    <!-- <nav> is a semantic html tag. it just stands for "navigation bar" -->
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Your profile</a>
+      <a href="timeline.html">Timeline</a>
+      <a href="#">Reels</a>
+      <a href="#">Settings</a>
+      <a href="#">Logout</a>
+    </nav>
+
+    <!--
+      what is a semantic tag?
+      just clearly defines what the tag does or what's inside the tag
+
+      <section>
+
+      </section>
+
+      <header>
+
+      </header>
+
+      if you're on a line of code, cmd + c (copy) copies the whole line. you dont need to highlight anything. if you highlight something it'll just copy what you highlighted
+
+      cmd + d highlights the next instance of what you're currently highlighting
+
+      cmd + enter makes a new line right below
+      cmd + shift + enter makes a new line right above
+    -->
+  </body>
+</html>
