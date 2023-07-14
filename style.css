@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: lightseagreen;
+  padding: 1rem;
+}
+
+/* every even a tag will have these styles */
+nav > a:nth-child(even) {
+  color: black;
+}
+
+/* if you hover over it, it'll apply these styles */
+nav > a:hover {
+  color: purple;
+}
+
+nav > a {
+  color: white;
+
+  /* wont be underlined anymore */
+  text-decoration: none;
+}
+
+/* media query: the styles your webpage will take in a different viewport
+  what a viewport?
+
+  how small your browser is
+
+  phone
+  tablet
+  computer
+*/
+
+/* if the view width is less than 1250px, it'll apply these styles */
+/* @media (max-width: 1250px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav > a {
+    font-size: 2rem;
+  }
+} */
+
+.user-input {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  color: orange;
+}

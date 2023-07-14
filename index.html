@@ -2,68 +2,26 @@
 <html lang="en">
   <head>
     <title>Facebook</title>
-    <style>
-      body {
-        margin: 0;
-      }
-
-      nav {
-        display: flex;
-        justify-content: space-around;
-        background-color: lightseagreen;
-        padding: 1rem;
-      }
-
-      /* every even a tag will have these styles */
-      nav > a:nth-child(even) {
-        color: black;
-      }
-
-      /* if you hover over it, it'll apply these styles */
-      nav > a:hover {
-        color: purple;
-      }
-
-      nav > a {
-        color: white;
-
-        /* wont be underlined anymore */
-        text-decoration: none;
-      }
-
-      /* media query: the styles your webpage will take in a different viewport
-        what a viewport?
-
-        how small your browser is
-
-        phone
-        tablet
-        computer
-      */
-
-      /* if the view width is less than 1250px, it'll apply these styles */
-      /* @media (max-width: 1250px) {
-        nav {
-          display: flex;
-          flex-direction: column;
-        }
-
-        nav > a {
-          font-size: 2rem;
-        }
-      } */
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- <nav> is a semantic html tag. it just stands for "navigation bar" -->
     <nav>
-      <a href="#">Home</a>
+      <a href="index.html">Home</a>
       <a href="#">Your profile</a>
       <a href="timeline.html">Timeline</a>
       <a href="#">Reels</a>
       <a href="#">Settings</a>
       <a href="#">Logout</a>
     </nav>
+
+    <header>
+      <h1>This is your homepage</h1>
+    </header>
+
+    <main>
+      some homepage stuff goes in here
+    </main>
 
     <!--
       what is a semantic tag?
@@ -83,6 +41,10 @@
 
       cmd + enter makes a new line right below
       cmd + shift + enter makes a new line right above
+
+      ctrl + 1 for the first tab
+      ctrl + 2 for the second tab
+      ctrl + 3 for the third tab etc etc
     -->
   </body>
 </html>
